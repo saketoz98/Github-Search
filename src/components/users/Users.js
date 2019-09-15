@@ -12,7 +12,7 @@ const Users = props => {
     return (
       <div style={UserStyle}>
         {githubContext.users.map(user => {
-          return <UserItem key={user.id} />;
+          return <UserItem key={user.id} user={user} />;
         })}
       </div>
     );
